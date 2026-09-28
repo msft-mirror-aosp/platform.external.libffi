@@ -9,6 +9,9 @@ third_party {
   license_note: "would be NOTICE save for:\n   .travis/\n   testsuite/lib*/\n   libtool-ldflags\n   LICENSE-BUILDTOOLS"
   security {
     tag: "NVD-CPE2.3:cpe:/a:libffi_project:libffi:3.3"
+    tag: "android:on_device_usage"
+    tag: "android:privilege_level:privileged"
+    tag: "android:untrusted_input"
   }
   last_upgrade_date {
     year: 2026
