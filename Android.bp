@@ -83,6 +83,13 @@ cc_library {
         "-Wno-unused-result",
     ],
     local_include_dirs: ["include"],
+    extra_include_dir_deps: [
+        "src/*/*.h",
+        "src/dlmalloc.c",
+    ],
+    extra_export_include_dirs_deps: [
+        "src/*/*.h",
+    ],
     generated_headers: ["ffi_header"],
     export_generated_headers: ["ffi_header"],
     srcs: [
